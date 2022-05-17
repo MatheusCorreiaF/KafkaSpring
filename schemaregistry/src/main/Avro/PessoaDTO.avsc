@@ -1,0 +1,15 @@
+{
+  "namespace": "br.com.redfield.kafka.schemaregistry.entity",
+  "type": "record",
+  "name": "PessoaDTO",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "lastName",
+      "type": "string"
+    }
+  ]
+}
