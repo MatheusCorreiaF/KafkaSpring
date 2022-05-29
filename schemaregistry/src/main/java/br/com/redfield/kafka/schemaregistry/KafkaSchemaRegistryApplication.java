@@ -21,8 +21,8 @@ public class KafkaSchemaRegistryApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		Pessoa pessoa = new Pessoa("TesteNome", "TesteSobrenome");
-
+		Pessoa pessoa = new Pessoa("TesteNomeConsumer", "TesteSobrenomeConsumer");
+		Thread.sleep(5000);
 		pessoaProducerImpl.persist("messagemTeste", pessoa);
 	}
 }
