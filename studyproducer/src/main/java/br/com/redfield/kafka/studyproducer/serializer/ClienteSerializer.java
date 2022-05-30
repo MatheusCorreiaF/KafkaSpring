@@ -23,6 +23,7 @@ public class ClienteSerializer implements Serializer {
                 return null;
             }
             System.out.println("Serializing...");
+            System.out.println(data.toString());
             return objectMapper.writeValueAsBytes(data);
         } catch (Exception e) {
             throw new SerializationException("Error when serializing MessageDto to byte[]");

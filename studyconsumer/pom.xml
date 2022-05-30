@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.redfield.kafka</groupId>
-	<artifactId>studyproducer</artifactId>
+	<artifactId>studyconsumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>studyproducer</name>
-	<description>Study Producer Kafka</description>
+	<name>studyconsumer</name>
+	<description>Study Consumer Kafka</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -36,12 +36,11 @@
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
